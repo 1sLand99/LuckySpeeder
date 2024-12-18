@@ -564,9 +564,9 @@ typedef NS_ENUM(NSUInteger, SwitchMod) { M1, M2, M3, M4 };
 
 - (void)initHook {
   switch (self.currentMod) {
-  case M1: {
+  case M1:
     hook_timeScale();
-  } break;
+    break;
   case M2:
     hook_gettimeofday();
     break;
